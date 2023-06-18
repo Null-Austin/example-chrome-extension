@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description" : "This is an Extention that supposed to help the developers in motorola to look out is missing in their Jira item.",
   "manifest_version" :3,
-  "author" : "Yulia Louzon ,Dor Perets , Asaf Erdman",
+  "author" : "Dor Perets , Asaf Erdman",
   "action": {
     "default_popup":"index.html",
     "default_title":"Welcome to Jira checker chrome tool"
