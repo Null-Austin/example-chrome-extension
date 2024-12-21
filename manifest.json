@@ -1,11 +1,23 @@
 {
-  "name":"JiraChecker for Chrome",
+  "name": "example Extension name",
   "version": "1.0.0",
-  "description" : "This is an Extention that supposed to help the developers in motorola to look out is missing in their Jira item.",
-  "manifest_version" :3,
-  "author" : "Dor Perets , Asaf Erdman",
+  "description": "example Extention desc",
+  "manifest_version": 3,
+  "author": "example author",
   "action": {
-    "default_popup":"index.html",
-    "default_title":"Welcome to Jira checker chrome tool"
-  }
+    "default_popup": "index.html",
+    "default_title": "example title"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.carrd.co/*"],
+      "js": ["content.js"]
+    }
+  ]
 }
